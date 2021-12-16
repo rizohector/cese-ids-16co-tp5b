@@ -1,8 +1,8 @@
-PROJECT_NAME            = TP4IDS
+PROJECT_NAME            = TP5bIDS
 PROJECT_NUMBER          = 1.0
 DOXYFILE_ENCODING       = UTF-8
 OUTPUT_DIRECTORY        = doc
-OUTPUT_LANGUAGE         = Spanish
+OUTPUT_LANGUAGE         = English
 INPUT 			        += ./scr
 INPUT 			        += ./inc
 RECURSIVE               = YES

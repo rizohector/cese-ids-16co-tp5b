@@ -8,11 +8,14 @@ OBJ_FILES = $(patsubst $(SRC_DIR)%.c,$(OBJ_DIR)%.o,$(SRC_FILES))
 
 all: build_folders $(OBJ_FILES)
 	@echo Building aplication
+	@echo Ejecutando Doxygen
+	@ doxygen Doxyfile
 	@gcc $(OBJ_FILES) -o $(BIN_DIR)/app.out
-
+	
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@echo Compiling source file $(notdir $(basename $<))
 	@gcc -c $< -I$(INC_DIR) -o $@
+	
 
 ###############################################################################
 # Creation of output folders
@@ -29,3 +32,4 @@ $(BIN_DIR): $(OUT_DIR)
 $(OBJ_DIR): $(OUT_DIR)
 	@echo Creating output objects folder
 	@mkdir $(OBJ_DIR)
+	

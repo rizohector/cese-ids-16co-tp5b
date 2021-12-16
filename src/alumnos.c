@@ -7,6 +7,8 @@
  * Creation Date: 2019/03/01
  */
  
+/** @author Héctor Ramón RIZO*/
+
 /*=====[Inclusion of own header]=============================================*/
 
 #include "alumnos.h"
@@ -31,11 +33,21 @@ static const struct alumno_s ESTEBAN_VOLENTINI = {
     .documento = "23.517.968",
 };
 
+/**
+ * @brief Estructura donde se cargan los datos del aluno RIZO
+ * 
+ */
+
 static const struct alumno_s HECTOR_RIZO = {
     .apellidos = "RIZO",
     .nombres = "Hector Ramon",
     .documento = "25.522.523",
 };
+
+/**
+ * @brief Estructura donde se agrega la cantida de alumnos y se utilziará para realizar la cuenta de estos.
+ * 
+ */
 
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
